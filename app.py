@@ -12,7 +12,7 @@ import joblib
 
 
 
-def return_prediction(model,sample_json):
+def return_prediction(model,transformer,sample_json):
     
     # For larger data features, you should probably write a for loop
     # That builds out this array for you
@@ -103,7 +103,7 @@ def prediction():
     
     
 
-    results = return_prediction(model=flower_model,sample_json=content)
+    results = return_prediction(model=flower_model,transformer=transformer,sample_json=content)
 
     return render_template('prediction.html',results=results)
 
