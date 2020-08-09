@@ -22,8 +22,8 @@ def return_prediction(model,sample_json):
     s_Year = sample_json['year_']
     s_Origin = sample_json['origin_']    
     
-    X = [s_Cylinders,s_Displacement,s_Horsepower,s_Weight,s_Acceleration,s_Year,s_Origin]
-    df = pd.DataFrame(X, index=[0])
+    X = [[s_Cylinders,s_Displacement,s_Horsepower,s_Weight,s_Acceleration,s_Year,s_Origin]]
+    df = pd.DataFrame(X, index=[1])
         
     prediction = model.predict(transformer.transform(df))
     
