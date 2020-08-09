@@ -5,7 +5,8 @@ from flask_wtf import FlaskForm
 from wtforms import TextField,SubmitField
 from wtforms.validators import NumberRange
 
-import numpy as np  
+import numpy as np
+import pandas as pd
 from keras.models import load_model
 import joblib
 
