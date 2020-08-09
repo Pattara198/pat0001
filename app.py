@@ -24,8 +24,7 @@ def return_prediction(model,sample_json):
     
     X = [s_Cylinders,s_Displacement,s_Horsepower,s_Weight,s_Acceleration,s_Year,s_Origin]
     df = pd.DataFrame(X, index=[0])
-    prediction = model.predict(transformer.transform(df))
-    
+        
     prediction = model.predict(transformer.transform(df))
     
     
