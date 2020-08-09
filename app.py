@@ -40,7 +40,7 @@ app.config['SECRET_KEY'] = 'someRandomKey'
 
 # REMEMBER TO LOAD THE MODEL AND THE SCALER!
 flower_model = load_model("Pattara102.h5")
-transformer = joblib.load("assets/data_transformer.joblib")
+transformer = joblib.load("data_transformer.joblib")
 
 
 # Now create a WTForm Class
